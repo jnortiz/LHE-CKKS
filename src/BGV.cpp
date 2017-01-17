@@ -48,12 +48,7 @@ void BGV::HWT(int* &_v, int h) {
     int hw, it_v;    
     size_t l = N/64;
     uint64_t *buf = new uint64_t[l];    
-    int64_t *signal = new int64_t[l];
-    
-    syscall(SYS_getrandom, signal, l*8, (unsigned int) 1);
-    for(int i = 0; i < l; i++) { /* For each 64-bit word */
-        cout << signal[i] << endl;
-    }
+    uint64_t *signal = new uint64_t[l];
     
     do {
                 
@@ -70,22 +65,21 @@ void BGV::HWT(int* &_v, int h) {
                 hw += _v[it_v];
                 
                 if(signal[i] & 0x1) {
-                    cout << _v[it_v] << " ";
                     _v[it_v] *= -1;
                 }
                 
-//                cout << _v[it_v] << " ";
                 signal[i] >>= 1;
                 buf[i] >>= 1;
                 it_v++;
             }
         }
-        cout << endl << "hw: " << hw << endl;
         
     } while(hw != h);
    
     delete [] buf;
+    delete [] signal;
     buf = NULL;
+    signal = NULL;
 
 }
 
