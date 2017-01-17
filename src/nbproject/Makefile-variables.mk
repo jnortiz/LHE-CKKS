@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=lhe-ckks
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/lhe-ckks
+CND_ARTIFACT_NAME_Debug=src
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/src
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=lhe-ckks.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/lhe-ckks.tar
+CND_PACKAGE_NAME_Debug=src.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/src.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=lhe-ckks
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/lhe-ckks
+CND_ARTIFACT_NAME_Release=src
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/src
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=lhe-ckks.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/lhe-ckks.tar
+CND_PACKAGE_NAME_Release=src.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/src.tar
 #
 # include compiler specific variables
 #

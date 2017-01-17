@@ -4,6 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>BGV.h</itemPath>
+      <itemPath>params.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +14,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>BGV.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -35,8 +38,25 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/sw/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/sw/lib</pElem>
+          </linkerAddLib>
+          <commandLine>-lntl -lgmp -lm</commandLine>
+        </linkerTool>
       </compileType>
+      <item path="BGV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BGV.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="params.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +79,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="BGV.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BGV.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="params.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

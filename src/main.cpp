@@ -12,6 +12,10 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include "params.h"
+
+#include "BGV.h"
 
 using namespace std;
 
@@ -20,6 +24,15 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
+    BGV *inst = new BGV();
+    int *_v;
+    
+    inst->HWT(_v, 32);
+    
+    for(int i = 0; i < N; i++) {
+        cout << _v[i] << " ";
+    }
+    
     return 0;
 }
 
