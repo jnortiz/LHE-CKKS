@@ -29,10 +29,20 @@ int main(int argc, char** argv) {
     
     inst->HWT(_v, 32);
     
-    for(int i = 0; i < N; i++) {
+    for(int i = 0; i < n_def; i++) {
         cout << _v[i] << " ";
     }
+    cout << "\n\n";
+    
+    vec_ZZ _r;
+    inst->UniformModQ(_r, inst->GetQ_l()[L_def]);
+            
+    for(int i = 0; i < n_def; i++) {
+        cout << _r[i] << " ";
+    }
+    cout << "\n\n";
     
     return 0;
+    
 }
 

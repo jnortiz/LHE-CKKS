@@ -14,8 +14,10 @@
 #ifndef PARAMS_H
 #define PARAMS_H
 
-/* Dimension */
-#define N 64
+#define n_def 64 /* Dimension */
+#define p_def 2 /* Base scaling p > 0 */
+#define q0_def 7 /* Modulus */
+#define L_def 10 /* Number of levels of the circuit C */
 
 #endif /* PARAMS_H */
 
